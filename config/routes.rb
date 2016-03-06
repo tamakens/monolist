@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get    'signup', to: 'users#new'
   get    'login' , to: 'sessions#new'
+  get    'items' , to: 'items#new'
   post   'login' , to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
